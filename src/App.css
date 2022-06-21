@@ -1,14 +1,22 @@
-.item {
-  width: inherit;
-  height: inherit;
-  background: white;
-  transform-origin: 50% 100%;
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 footer {
   background-color: black;
   height: 60vh;
   margin-top: 5rem;
+}
+
+.item {
+  width: inherit;
+  height: inherit;
+  background: white;
+  transform-origin: 50% 100%;
 }
 
 .center-text-p {
@@ -86,7 +94,7 @@ footer {
 }
 
 .footer-img {
-  width: 315px;
+  width: 215px;
   height: 215px;
 }
 
@@ -108,6 +116,7 @@ footer {
 .header-div {
   margin-top: 3rem;
   height: 100vh;
+  position: relative;
 }
 
 .header-title {
@@ -121,4 +130,75 @@ footer {
   margin: 0;
   font-weight: 200;
   text-align: center;
+}
+
+.header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 24rem;
+}
+
+.menu-button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  position: fixed !important;
+  height: 1rem;
+  top: 0;
+  right: 0;
+  margin-top: 3rem !important;
+  margin-right: 2rem !important;
+}
+
+.menu-button-icon {
+  color: black;
+}
+
+.menu-screen {
+  background-color: black;
+  height: 100vh;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  margin: auto;
+}
+
+.menu-option {
+  color: white;
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.menu-option-link:hover {
+  transition: 0.6s;
+  background-color: orange;
+}
+
+.menu-screen-bottom {
+  position: fixed;
+  bottom: 0;
+}
+
+.menu-screen-bottom-social {
+  position: fixed;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.nosotros-div {
+  background-color: black;
+}
+
+.nosotros-header {
+  font-size: 5rem;
+  color: orange;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nosotros-img {
+  width: 90%;
+  margin: auto;
 }
