@@ -8,7 +8,7 @@ a {
 
 footer {
   background-color: black;
-  height: 60vh;
+  height: 40vh;
   margin-top: 5rem;
 }
 
@@ -63,20 +63,6 @@ footer {
   margin-top: 3rem;
 }
 
-.header-numeralia {
-  text-align: center;
-  font-size: 17rem;
-  margin: 0;
-}
-
-.sub-header-numeralia {
-  text-align: center;
-  font-size: 7.5rem;
-  margin: 0;
-  margin-top: -4.8rem;
-  white-space: nowrap;
-}
-
 .right-img {
   width: 316px;
   height: 212px;
@@ -94,8 +80,10 @@ footer {
 }
 
 .footer-img {
-  width: 215px;
-  height: 215px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  filter: grayscale(1);
 }
 
 .footer-input-button {
@@ -136,7 +124,7 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 24rem;
+  width: 50vw;
 }
 
 .menu-button {
@@ -201,4 +189,40 @@ footer {
 .nosotros-img {
   width: 90%;
   margin: auto;
+}
+
+.footer-link {
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.footer-link:hover {
+  text-transform: uppercase;
+  color: orange;
+}
+
+.footer-social-icons {
+  margin-left: 3rem;
+}
+
+.footer-social-icon {
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.footer-logos {
+  width: 5rem;
+}
+
+.numeralia-text{
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.numeralia-num{
+  font-size: 2rem;
 }

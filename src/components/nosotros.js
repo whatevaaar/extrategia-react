@@ -1,4 +1,4 @@
-import { Grid, Item } from "@mui/material";
+import { Grid, } from "@mui/material";
 import mainImg from "../assets/img/cats.jpg"
 const Nosotros = () => {
     return (

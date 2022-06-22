@@ -1,25 +1,48 @@
-import Marquee from "react-fast-marquee";
-import { Grid } from "@mui/material";
+import { motion, useViewportScroll, useTransform } from "framer-motion"
 const Numeralia = () => {
+
+    const { scrollYProgress } = useViewportScroll()
+    const xPosAnimSub1 = useTransform(scrollYProgress, [0, 1,], [1, 750,])
+    const xPosAnimSub2 = useTransform(scrollYProgress, [0, 1,], [1, 650,])
+    const xPosAnimSub3 = useTransform(scrollYProgress, [0, 1,], [1, 550,])
+    const xPosAnimSub4 = useTransform(scrollYProgress, [0, 1,], [1, 450,])
     return (
         <div className="div-numeralia">
+            <motion.div className="numeralia-data"
+                style={{
+                    x: xPosAnimSub1,
+                    xPosAnimSub1
+                }}
+            >
+                <p className="numeralia-num">190</p>
+                <p className="numeralia-text">portadas en medios</p>
+            </motion.div>
 
-            <Grid container>
-                <Grid item xs={3}></Grid>
-                <Grid item xs={6}>
-                    <h1 className="header-numeralia">582</h1>
-                    <h2 className="sub-header-numeralia">DAYS OF</h2>
-                    <Grid item xs={3}></Grid>
-                </Grid>
-                <Grid container>
-                    <Grid item xs={3}></Grid>
-                    <Grid item xs={6}>
-                        <Marquee speed={100} style={{ borderStyle: "solid", borderWidth: ".2rem", fontSize: "5rem", textTransform: "uppercase", borderRadius: "500px", color:"orange", fontWeight: "bold"}}>
-                            I can be a React component, multiple React components, or just some text.
-                        </Marquee></Grid>
-                    <Grid item xs={3}></Grid>
-                </Grid>
-            </Grid>
+            <motion.div className="numeralia-data"
+
+                style={{
+                    x: xPosAnimSub2
+                }}
+            >
+                <p className="numeralia-num">195</p>
+                <p className="numeralia-text">eventos trágicos</p>
+            </motion.div>
+            <motion.div className="numeralia-data"
+                style={{
+                    x: xPosAnimSub3
+                }}
+            >
+                <p className="numeralia-num">+450M</p>
+                <p className="numeralia-text">roi anual para nuestros clientes</p>
+            </motion.div>
+            <motion.div className="numeralia-data"
+                style={{
+                    x: xPosAnimSub4
+                }}
+            >
+                <p className="numeralia-num">+400k</p>
+                <p className="numeralia-text">seguidores en redes administratibas</p>
+            </motion.div>
         </div>
     )
 }

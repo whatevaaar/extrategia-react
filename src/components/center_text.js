@@ -1,5 +1,7 @@
-import { Grid } from "@mui/material";
-import { List, ListItemButton, ListItemText, ListItem, ListItemIcon, Typography } from "@mui/material";
+import { List, ListItemButton, ListItemText, ListItem, ListItemIcon, Typography, Grid } from "@mui/material";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { motion } from "framer-motion"
 
 const CenterText = () => {
     return (
@@ -10,14 +12,27 @@ const CenterText = () => {
                     <p className="bold-subtitle">
                         IN 1984, ETHIOPIA EXPERIENCED A FAMINE IN WHICH AN ESTIMATED 1.2 MILLION PEOPLE DIED OF STARVATION.
                     </p>
-                    <p className="center-text-p">Many foreigners remember this: in 1985 about one-third of the world’s population watched a pop concert to raise money for starving
-                        Ethiopians due to a man-made famine. Once again, the blockade of food is being used as a weapon of war against innocent civilians.
-                        Millions may die if the world doesn"t act soon.</p>
+                    <Carousel infiniteLoop autoPlay animationHandler={"fade"} showIndicators={false}>
+                        <div>
+                            <p className="center-text-p">Many foreigners remember this: in 1985 about one-third of the world’s population watched a pop concert to raise money for starving
+                                Ethiopians due to a man-made famine. Once again, the blockade of food is being used as a weapon of war against innocent civilians.
+                                Millions may die if the world doesn"t act soon.</p>
+                        </div>
+                        <div>
+                            <p className="center-text-p">Empresa global de comunicación, PR y marketing con más de 23 años de experiencia creando, desarrollando y ejecutando estrategias de comunicación corporativa, institucional y de marcas para lograr alianzas eficientes entre sus clientes, los medios de comunicación y su entorno digital.</p>
+                        </div>
+                        <div>
+                            <p className="center-text-p">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                                - Juan Francisco Aguilar / DELL
+                            </p>
+                        </div>
+                    </Carousel>
                     <div className="center-subtext">
-                        <p className="bold-subtitle">WHAT IS HAPPENING?</p>
-                        <p className="subtitle-text">
-                            THERE IS A GENOCIDAL WAR RAGING TIGRAY WHERE 70K + CIVILIANS HAVE BEEN KILLED, 5.2 MILLION PEOPLE ARE FACING FAMINE & 2 MILLION PEOPLE HAVE BEEN DISPLACED. FOR OVER A YEAR TIGRAY HAS EXPERIENCED:
-                        </p>
+                        <motion.p
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="bold-subtitle">Qué hacemos</motion.p>
                     </div>
                     <div className="list-div">
                         <List>
