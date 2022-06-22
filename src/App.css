@@ -28,7 +28,8 @@ footer {
 
 .bold-subtitle {
   font-weight: bold;
-  font-size: .7rem;
+  font-size: 5rem;
+  text-align: center;
 }
 
 .subtitle-text {
@@ -225,4 +226,12 @@ footer {
 
 .numeralia-num{
   font-size: 2rem;
+}
+
+.center-carousel{
+  height: 5rem;
+}
+
+.center-subtext{
+  margin-top: 20rem;
 }

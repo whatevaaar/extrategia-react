@@ -9,17 +9,16 @@ const CenterText = () => {
             <Grid container spacing={2}>
                 <Grid item xs={3}></Grid>
                 <Grid item xs={6}>
-                    <p className="bold-subtitle">
-                        IN 1984, ETHIOPIA EXPERIENCED A FAMINE IN WHICH AN ESTIMATED 1.2 MILLION PEOPLE DIED OF STARVATION.
-                    </p>
-                    <Carousel infiniteLoop autoPlay animationHandler={"fade"} showIndicators={false}>
+                    <Carousel showThumbs={false} infiniteLoop autoPlay animationHandler={"fade"} showIndicators={false} className="center-carousel">
                         <div>
-                            <p className="center-text-p">Many foreigners remember this: in 1985 about one-third of the world’s population watched a pop concert to raise money for starving
-                                Ethiopians due to a man-made famine. Once again, the blockade of food is being used as a weapon of war against innocent civilians.
-                                Millions may die if the world doesn"t act soon.</p>
+                            <p className="center-text-p">Empresa global de comunicación, PR y marketing con más de 23 años de experiencia creando, desarrollando y ejecutando estrategias de
+                                comunicación corporativa, institucional y de marcas para lograr alianzas eficientes entre sus clientes, los medios de comunicación y su entorno digital.</p>
                         </div>
                         <div>
-                            <p className="center-text-p">Empresa global de comunicación, PR y marketing con más de 23 años de experiencia creando, desarrollando y ejecutando estrategias de comunicación corporativa, institucional y de marcas para lograr alianzas eficientes entre sus clientes, los medios de comunicación y su entorno digital.</p>
+                            <p className="center-text-p">Es una agencia que entiende la importancia crucial de la información a través de diferentes plataformas y responden de forma
+                                inmediata con información exclusiva y de calidad para poder generar notas de alto valor para los lectores.
+                                Alberto Aguilar / Forbes
+                            </p>
                         </div>
                         <div>
                             <p className="center-text-p">
@@ -106,6 +105,7 @@ const CenterText = () => {
                 <Grid item xs={3}>
                 </Grid>
             </Grid>
+
         </div>);
 }
 export default CenterText;

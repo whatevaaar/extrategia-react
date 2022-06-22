@@ -2,10 +2,10 @@ import { motion, useViewportScroll, useTransform } from "framer-motion"
 const Numeralia = () => {
 
     const { scrollYProgress } = useViewportScroll()
-    const xPosAnimSub1 = useTransform(scrollYProgress, [0, 1,], [1, 750,])
+    const xPosAnimSub1 = useTransform(scrollYProgress, [0, 1,], [1, 850,])
     const xPosAnimSub2 = useTransform(scrollYProgress, [0, 1,], [1, 650,])
-    const xPosAnimSub3 = useTransform(scrollYProgress, [0, 1,], [1, 550,])
-    const xPosAnimSub4 = useTransform(scrollYProgress, [0, 1,], [1, 450,])
+    const xPosAnimSub3 = useTransform(scrollYProgress, [0, 1,], [1, 450,])
+    const xPosAnimSub4 = useTransform(scrollYProgress, [0, 1,], [1, 250,])
     return (
         <div className="div-numeralia">
             <motion.div className="numeralia-data"
@@ -25,7 +25,7 @@ const Numeralia = () => {
                 }}
             >
                 <p className="numeralia-num">195</p>
-                <p className="numeralia-text">eventos trágicos</p>
+                <p className="numeralia-text">eventos estrágicos</p>
             </motion.div>
             <motion.div className="numeralia-data"
                 style={{
@@ -41,7 +41,7 @@ const Numeralia = () => {
                 }}
             >
                 <p className="numeralia-num">+400k</p>
-                <p className="numeralia-text">seguidores en redes administratibas</p>
+                <p className="numeralia-text">seguidores en redes administrativas</p>
             </motion.div>
         </div>
     )

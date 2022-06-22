@@ -4,10 +4,10 @@ import Marquee from "react-fast-marquee";
 
 const Header = () => {
     const { scrollYProgress } = useViewportScroll()
-    const yPosAnimSub = useTransform(scrollYProgress, [0, 50,], [0, 750,])
-    const xPosAnimSub = useTransform(scrollYProgress, [0, 50,], [0, 150,])
+    const yPosAnimSub = useTransform(scrollYProgress, [0, 40,], [0, 750,])
+    const xPosAnimSub = useTransform(scrollYProgress, [0, 1,], [0, 650,])
 
-    const yPosAnimImg = useTransform(scrollYProgress, [0, 1,], [0, 1250,])
+    const yPosAnimImg = useTransform(scrollYProgress, [0, 1,], [0, 1050,])
     return (
         <div className="header-div">
             <motion.h2
