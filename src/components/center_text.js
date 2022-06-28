@@ -2,18 +2,22 @@ import { List, ListItemButton, ListItemText, ListItem, ListItemIcon, Typography,
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { motion } from "framer-motion"
+import video from "../assets/video/v1.mp4"
 
 const CenterText = () => {
     return (
         <div className="center-text">
+            <video className="center-video" width="750" height="500" controls >
+      <source src={video} type="video/mp4"/>
+      </video>
             <Grid container spacing={2}>
                 <Grid item xs={3}></Grid>
                 <Grid item xs={6}>
+                    <div>
+                        <p className="center-text-p">Empresa global de comunicación, PR y marketing con más de 23 años de experiencia creando, desarrollando y ejecutando estrategias de
+                            comunicación corporativa, institucional y de marcas para lograr alianzas eficientes entre sus clientes, los medios de comunicación y su entorno digital.</p>
+                    </div>
                     <Carousel showThumbs={false} infiniteLoop autoPlay animationHandler={"fade"} showIndicators={false} className="center-carousel">
-                        <div>
-                            <p className="center-text-p">Empresa global de comunicación, PR y marketing con más de 23 años de experiencia creando, desarrollando y ejecutando estrategias de
-                                comunicación corporativa, institucional y de marcas para lograr alianzas eficientes entre sus clientes, los medios de comunicación y su entorno digital.</p>
-                        </div>
                         <div>
                             <p className="center-text-p">Es una agencia que entiende la importancia crucial de la información a través de diferentes plataformas y responden de forma
                                 inmediata con información exclusiva y de calidad para poder generar notas de alto valor para los lectores.
@@ -40,7 +44,7 @@ const CenterText = () => {
                                     <ListItemIcon>
                                         <p className="bullet">&#x2022;</p>
                                     </ListItemIcon>
-                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: ".9rem", fontWeight: "bold", textTransform: "uppercase" }}>Comunicación y PR</Typography>} />
+                                    <ListItemText className="list-text" primary={<Typography className="list-text" type="body2" style={{ fontSize: ".9rem", fontWeight: "bold", textTransform: "uppercase" }}>Comunicación y PR</Typography>} />
                                 </ListItemButton>
                             </ListItem>
 

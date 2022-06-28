@@ -1,5 +1,5 @@
 import { Grid, } from "@mui/material";
-import mainImg from "../assets/img/cats.jpg"
+import mainImg from "../assets/img/us.png"
 const Nosotros = () => {
     return (
         <div className="nosotros-div">

@@ -1,0 +1,18 @@
+import { Grid, } from "@mui/material";
+import mainImg from "../assets/img/us.png"
+
+const Actualidad = () => {
+return(
+        <div className="nosotros-div">
+            <Grid container spacing={2}>
+                <Grid item xs={6} className="nosotros-left">
+                    <h1 className="nosotros-header">actualidad</h1>
+                </Grid>
+                <Grid item xs={6} className="nosotros-right">
+                    <img className='nosotros-img' alt="img" src={mainImg}></img>
+                </Grid>
+            </Grid>
+        </div>
+);
+};
+export default Actualidad;

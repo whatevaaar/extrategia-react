@@ -6,6 +6,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Nosotros from "./nosotros";
 import { useState } from 'react';
+import Actualidad from "./actualidad";
+import Reconocimientos from "./reconocimientos";
 
 const MenuScreen = () => {
     const [nosotrosOpened, setNosotrosOpened] = useState(false);
@@ -13,12 +15,10 @@ const MenuScreen = () => {
     const [actualidadOpened, setActualidadOpened] = useState(false);
     const [recOpened, setRecOpened] = useState(false);
 
-    const handleClickNosotros = () => {
-        setNosotrosOpened(true);
-        setContactoOpened(false);
-        setActualidadOpened(false);
-        setRecOpened(false);
-    }
+    const handleClickNosotros = () => setNosotrosOpened(true);
+    const handleClickRec = () => setRecOpened(true);
+    const handleClickContacto = () => setContactoOpened(true);
+    const handleClickActualidad = () => setActualidadOpened(true);
 
     if (!nosotrosOpened && !contactoOpened && !actualidadOpened && !recOpened) {
 
@@ -28,13 +28,13 @@ const MenuScreen = () => {
                     <a className="menu-option-link" onClick={handleClickNosotros}>
                         <h1 className="menu-option">nosotros</h1>
                     </a>
-                    <a className="menu-option-link" href="#">
+                    <a className="menu-option-link" onClick={handleClickActualidad}>
                         <h1 className="menu-option">actualidad</h1>
                     </a>
-                    <a className="menu-option-link" href="#">
+                    <a className="menu-option-link"  onClick={handleClickRec}>
                         <h1 className="menu-option">reconocimientos</h1>
                     </a>
-                    <a className="menu-option-link" href="#">
+                    <a className="menu-option-link"  onClick={handleClickContacto}>
                         <h1 className="menu-option">contacto</h1>
                     </a>
                 </div>
@@ -61,6 +61,14 @@ const MenuScreen = () => {
     else if (nosotrosOpened) {
         return (
             <Nosotros />);
+    }
+    else if (actualidadOpened) {
+        return (
+            <Actualidad />);
+    }
+    else if (recOpened) {
+        return (
+            <Reconocimientos />);
     }
 
 }

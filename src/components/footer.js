@@ -54,13 +54,13 @@ const Footer = () => {
                     <img src={mainImg} className="footer-img" alt="Footer img" />
                     <div><a href="#" className='footer-link'>aviso de privacidad</a></div>
                     <div><a href="#" className='footer-link'>política de coookies</a></div>
-                    <div><a href="#" className='footer-link'>únete (METAL)</a></div>
+                    <div><a href="https://www.extrategia.com.mx/Metal/" className='footer-link'>únete (METAL)</a></div>
                 </Grid>
                 <Grid item xs={4}>
 
                     <Grid container spacing={2}>
                         <Grid item xs={4}>
-                            <div><img src={f1} alt='logo' className='footer-logos' href="#" /></div>
+                            <div><a href='#'><img src={f1} alt='logo' className='footer-logos' href="#" /></a></div>
                             <div><img src={f2} alt='logo' className='footer-logos' href="#" /></div>
                         </Grid>
                         <Grid item xs={4}>
