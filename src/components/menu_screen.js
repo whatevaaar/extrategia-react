@@ -31,10 +31,10 @@ const MenuScreen = () => {
                     <a className="menu-option-link" onClick={handleClickActualidad}>
                         <h1 className="menu-option">actualidad</h1>
                     </a>
-                    <a className="menu-option-link"  onClick={handleClickRec}>
+                    <a className="menu-option-link" onClick={handleClickRec}>
                         <h1 className="menu-option">reconocimientos</h1>
                     </a>
-                    <a className="menu-option-link"  onClick={handleClickContacto}>
+                    <a className="menu-option-link" onClick={handleClickContacto}>
                         <h1 className="menu-option">contacto</h1>
                     </a>
                 </div>

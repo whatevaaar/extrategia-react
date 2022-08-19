@@ -7,7 +7,8 @@ a {
 }
 
 footer {
-  background-color: black;
+  background-image: url('assets/img/footer-back.jpg');
+  background-size: cover;
   height: 40vh;
   margin-top: 5rem;
 }
@@ -45,7 +46,7 @@ footer {
 
 .center-list-item:hover {
   transition: 0.6s;
-  background-color: orange;
+  background-color: black;
 }
 
 .top-list-border {
@@ -54,7 +55,7 @@ footer {
 }
 
 .list-text {
-  color: orange;
+  color: gray;
   text-align: end;
 }
 
@@ -68,6 +69,8 @@ footer {
 }
 
 .list-div {
+  width: 90vw;
+  margin: auto;
   margin-top: 3rem;
 }
 
@@ -109,8 +112,33 @@ footer {
   margin-bottom: 3rem;
 }
 
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+    background-size: cover;
+  }
+
+  50% {
+    background-size: 150%;
+    background-position: 100% 0;
+    background-size: 110%;
+    background-image: url("assets/img/01.jpg");
+  }
+
+  100% {
+    background-position: 100% 0 50%;
+    background-size: 210%;
+    background-image: url("assets/img/03.jpg");
+  }
+
+}
+
 .header-div {
-  margin-top: 3rem;
+  padding-top: 3rem;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 2s linear infinite alternate;
+  background-image: url("assets/img/back.jpg");
   height: 100vh;
   position: relative;
 }
@@ -121,10 +149,29 @@ footer {
   text-align: center;
 }
 
-.header-subtitle {
-  font-size: 7rem;
+.header-influence {
+  font-size: 5vw;
   margin: 0;
-  font-weight: 200;
+  margin-top: 40vh;
+  font-weight: 10;
+  text-align: center;
+}
+
+.header-to {
+  font-size: 2vw;
+  margin: 0;
+  margin-top: 3vh;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header-reputation {
+  font-size: 8vw;
+  margin: 0;
+  letter-spacing: .2rem;
+  margin-top: 3vh;
+  font-weight: 600;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -132,7 +179,7 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50vw;
+  width: 10vw;
 }
 
 .menu-button {
@@ -228,14 +275,14 @@ footer {
 }
 
 .numeralia-text {
-  font-size: 1.7rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .numeralia-num {
-  font-size: 2rem;
-  color: orange;
+  font-size: 4rem;
+  margin-bottom: 0;
   font-weight: 900;
 }
 
@@ -251,11 +298,159 @@ footer {
   display: none !important;
 }
 
-.center-video{
+.center-video {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 80vw;
+  width: 100vw;
   height: 100%;
-  margin-bottom: 5rem;
+}
+
+.center-video-2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100vw;
+  height: 100%;
+}
+
+.clientes-subtitle {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+}
+
+.clientes-num {
+  margin-left: 3rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 10vw;
+  display: block;
+  font-weight: 600;
+}
+
+.clientes-text {
+  margin-left: 3rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  display: block;
+  font-weight: 600;
+}
+
+.img-num-anim {
+  animation: animatedNumImg 12s infinite;
+  max-height: 30vh;
+  min-height: 20vh;
+  max-width: 20vw;
+}
+
+.number-anim{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.text-anim{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2vw;
+}
+
+.number-anim::before{
+  animation: animatedNumInt 3s infinite;
+  content: "Geeks";
+}
+
+.text-anim::before {
+  content: "Geeks";
+  animation: animatedNumText 3s infinite;
+
+}
+
+@keyframes animatedNumText {
+  0% {
+    content: "portadas en medios";
+  }
+
+  30% {
+    content: "eventos estrágicos";
+  }
+
+  70% {
+    content: "roi anual para nuestros clientes";
+  }
+
+  100% {
+    content: "seguidores en redes";
+  }
+}
+
+@keyframes animatedNumInt {
+  0% {
+    content: "190";
+  }
+
+  30% {
+    content: "195";
+  }
+
+  70% {
+    content: "+450M";
+  }
+
+  100% {
+    content: "+400k";
+  }
+}
+
+@keyframes animatedNumImg {
+  0% {
+    content: url('assets/img/LH_2_0031.JPG');
+  }
+
+  10% {
+    content: url('assets/img/LH_2_0103.JPG');
+  }
+
+  20% {
+    content: url('assets/img/LH_2_0224.JPG');
+  }
+
+  30% {
+    content: url('assets/img/LH_2_0264.JPG');
+
+  }
+
+  40% {
+    content: url('assets/img/Extrategia_Web_Portada_01.jpg');
+  }
+
+  50% {
+    content: url('assets/img/Extrategia_Web_Portada_02.jpg');
+  }
+
+  60% {
+    content: url('assets/img/Extrategia_Web_Portada_03.jpg');
+  }
+
+  70% {
+    content: url('assets/img/Extrategia_Web_Portada_04.jpg');
+
+  }
+
+  80% {
+    content: url('assets/img/Archivo_000.jpeg');
+  }
+
+  90% {
+    content: url('assets/img/Archivo_001.jpeg');
+  }
+
+  100% {
+    content: url('assets/img/Archivo_002.jpeg');
+  }
+
+}
+.div-column-anim{
+
 }

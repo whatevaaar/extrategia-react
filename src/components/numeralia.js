@@ -1,48 +1,25 @@
-import { motion, useViewportScroll, useTransform } from "framer-motion"
+import { Grid, } from "@mui/material";
 const Numeralia = () => {
 
-    const { scrollYProgress } = useViewportScroll()
-    const xPosAnimSub1 = useTransform(scrollYProgress, [0, 1,], [1, 850,])
-    const xPosAnimSub2 = useTransform(scrollYProgress, [0, 1,], [1, 650,])
-    const xPosAnimSub3 = useTransform(scrollYProgress, [0, 1,], [1, 450,])
-    const xPosAnimSub4 = useTransform(scrollYProgress, [0, 1,], [1, 250,])
     return (
         <div className="div-numeralia">
-            <motion.div className="numeralia-data"
-                style={{
-                    x: xPosAnimSub1,
-                    xPosAnimSub1
-                }}
-            >
-                <p className="numeralia-num">190</p>
-                <p className="numeralia-text">portadas en medios</p>
-            </motion.div>
-
-            <motion.div className="numeralia-data"
-
-                style={{
-                    x: xPosAnimSub2
-                }}
-            >
-                <p className="numeralia-num">195</p>
-                <p className="numeralia-text">eventos estrágicos</p>
-            </motion.div>
-            <motion.div className="numeralia-data"
-                style={{
-                    x: xPosAnimSub3
-                }}
-            >
-                <p className="numeralia-num">+450M</p>
-                <p className="numeralia-text">roi anual para nuestros clientes</p>
-            </motion.div>
-            <motion.div className="numeralia-data"
-                style={{
-                    x: xPosAnimSub4
-                }}
-            >
-                <p className="numeralia-num">+400k</p>
-                <p className="numeralia-text">seguidores en redes administrativas</p>
-            </motion.div>
+            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                <Grid item xs={2} sm={3} md={3}>
+                    <p className="numeralia-num">190</p>
+                    <p className="numeralia-text">portadas en medios</p>
+                </Grid>
+                <Grid item xs={2} sm={3} md={3}>
+                    <p className="numeralia-num">195</p>
+                    <p className="numeralia-text">eventos estrágicos</p>
+                </Grid>
+                <Grid item xs={2} sm={3} md={3}>
+                    <p className="numeralia-num">+450M</p>
+                    <p className="numeralia-text">roi anual generado</p>
+                </Grid>
+                <Grid item xs={2} sm={3} md={3}>
+                    <p className="numeralia-num">+400k</p>
+                    <p className="numeralia-text">seguidores en redes</p>
+                </Grid></Grid>
         </div>
     )
 }
