@@ -18,7 +18,7 @@ const CenterText = () => {
                                     <ListItemIcon>
                                         <p className="bullet">&#x2022;</p>
                                     </ListItemIcon>
-                                    <ListItemText className="list-text" primary={<Typography className="list-text" type="body2" style={{ fontSize: ".9rem", fontWeight: "bold", textTransform: "uppercase" }}>Comunicación y PR</Typography>} />
+                                    <ListItemText className="list-text" primary={<Typography className="list-text" type="body2" style={{ fontSize: "1.2vw", fontWeight: "bold", textTransform: "uppercase" }}>Comunicación y PR</Typography>} />
                                 </ListItemButton>
                             </ListItem>
 
@@ -28,7 +28,7 @@ const CenterText = () => {
                                     <ListItemIcon>
                                         <p className="bullet">&#x2022;</p>
                                     </ListItemIcon>
-                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: ".9rem", fontWeight: "bold", textTransform: "uppercase" }}>Influencer</Typography>} />
+                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: "1.2vw", fontWeight: "bold", textTransform: "uppercase" }}>Influencer</Typography>} />
                                 </ListItemButton>
                             </ListItem>
 
@@ -38,7 +38,7 @@ const CenterText = () => {
                                     <ListItemIcon>
                                         <p className="bullet">&#x2022;</p>
                                     </ListItemIcon>
-                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: ".9rem", fontWeight: "bold", textTransform: "uppercase" }}>Branding</Typography>} />
+                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: "1.2vw", fontWeight: "bold", textTransform: "uppercase" }}>Branding</Typography>} />
                                 </ListItemButton>
                             </ListItem>
                             <ListItem className="center-list-item" disablePadding>
@@ -46,7 +46,7 @@ const CenterText = () => {
                                     <ListItemIcon>
                                         <p className="bullet">&#x2022;</p>
                                     </ListItemIcon>
-                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: ".9rem", fontWeight: "bold", textTransform: "uppercase" }}>inbound mkt</Typography>} />
+                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: "1.2vw", fontWeight: "bold", textTransform: "uppercase" }}>inbound mkt</Typography>} />
                                 </ListItemButton>
                             </ListItem>
 
@@ -56,16 +56,7 @@ const CenterText = () => {
                                     <ListItemIcon>
                                         <p className="bullet">&#x2022;</p>
                                     </ListItemIcon>
-                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: ".9rem", fontWeight: "bold", textTransform: "uppercase" }}>estrategia digital</Typography>} />
-                                </ListItemButton>
-                            </ListItem>
-
-                            <ListItem className="center-list-item" disablePadding>
-                                <ListItemButton>
-                                    <ListItemIcon>
-                                        <p className="bullet">&#x2022;</p>
-                                    </ListItemIcon>
-                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: ".9rem", fontWeight: "bold", textTransform: "uppercase" }}>inteligencia</Typography>} />
+                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: "1.2vw", fontWeight: "bold", textTransform: "uppercase" }}>estrategia digital</Typography>} />
                                 </ListItemButton>
                             </ListItem>
 
@@ -74,7 +65,16 @@ const CenterText = () => {
                                     <ListItemIcon>
                                         <p className="bullet">&#x2022;</p>
                                     </ListItemIcon>
-                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: ".9rem", fontWeight: "bold", textTransform: "uppercase" }}>entrenamientos</Typography>} />
+                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: "1.2vw", fontWeight: "bold", textTransform: "uppercase" }}>inteligencia</Typography>} />
+                                </ListItemButton>
+                            </ListItem>
+
+                            <ListItem className="center-list-item" disablePadding>
+                                <ListItemButton>
+                                    <ListItemIcon>
+                                        <p className="bullet">&#x2022;</p>
+                                    </ListItemIcon>
+                                    <ListItemText className="list-text" primary={<Typography type="body2" style={{ fontSize: "1.2vw", fontWeight: "bold", textTransform: "uppercase" }}>entrenamientos</Typography>} />
                                 </ListItemButton>
                             </ListItem>
                         </List>

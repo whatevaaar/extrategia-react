@@ -114,14 +114,13 @@ footer {
 
 @keyframes animatedBackground {
   0% {
-    background-position: 0 0;
+    background-position: 100% 0 50%;
     background-size: cover;
   }
 
   50% {
     background-size: 150%;
     background-position: 100% 0;
-    background-size: 110%;
     background-image: url("assets/img/01.jpg");
   }
 
@@ -135,12 +134,12 @@ footer {
 
 .header-div {
   padding-top: 3rem;
-  background-position: 0px 0px;
   background-repeat: repeat-x;
-  animation: animatedBackground 2s linear infinite alternate;
+  animation: animatedBackground 3s linear infinite alternate;
   background-image: url("assets/img/back.jpg");
   height: 100vh;
   position: relative;
+  background-size: cover;
 }
 
 .header-title {
@@ -331,39 +330,44 @@ footer {
 }
 
 .clientes-text {
-  margin-left: 3rem;
+  margin-left: 3rem !important;
   text-transform: uppercase;
   font-size: 3rem;
   display: block;
   font-weight: 600;
+  margin: 0;
 }
 
 .img-num-anim {
-  animation: animatedNumImg 12s infinite;
+  animation: animatedNumImg 10s ease-in-out infinite;
+  height: 10%;
   max-height: 30vh;
   min-height: 20vh;
   max-width: 20vw;
 }
 
-.number-anim{
+.number-anim {
+  margin: 0;
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
 }
-.text-anim{
+
+.text-anim {
   text-align: center;
+  font-weight: 500;
   text-transform: capitalize;
   font-size: 2vw;
 }
 
-.number-anim::before{
-  animation: animatedNumInt 3s infinite;
-  content: "Geeks";
+.number-anim::before {
+  content: "190";
+  animation: animatedNumInt 4s linear infinite;
 }
 
 .text-anim::before {
-  content: "Geeks";
-  animation: animatedNumText 3s infinite;
+  content: "portadas en medios";
+  animation: animatedNumText 4s linear infinite;
 
 }
 
@@ -380,7 +384,7 @@ footer {
     content: "roi anual para nuestros clientes";
   }
 
-  100% {
+  90% {
     content: "seguidores en redes";
   }
 }
@@ -398,7 +402,7 @@ footer {
     content: "+450M";
   }
 
-  100% {
+  90% {
     content: "+400k";
   }
 }
@@ -406,51 +410,70 @@ footer {
 @keyframes animatedNumImg {
   0% {
     content: url('assets/img/LH_2_0031.JPG');
+    transform: rotate(-40deg) scale(1);
   }
 
   10% {
     content: url('assets/img/LH_2_0103.JPG');
+    transform: rotate(40deg) scale(1.5);
   }
 
   20% {
     content: url('assets/img/LH_2_0224.JPG');
+    transform: rotate(-40deg) scale(1);
   }
 
   30% {
     content: url('assets/img/LH_2_0264.JPG');
+    transform: rotate(40deg) scale(1.5);
 
   }
 
   40% {
     content: url('assets/img/Extrategia_Web_Portada_01.jpg');
+    transform: rotate(-40deg) scale(1.5);
   }
 
   50% {
     content: url('assets/img/Extrategia_Web_Portada_02.jpg');
+    transform: rotate(40deg) scale(1);
   }
 
   60% {
     content: url('assets/img/Extrategia_Web_Portada_03.jpg');
+    transform: rotate(-40deg) scale(1.5);
   }
 
   70% {
     content: url('assets/img/Extrategia_Web_Portada_04.jpg');
+    transform: rotate(40deg) scale(1);
 
   }
 
   80% {
     content: url('assets/img/Archivo_000.jpeg');
+    transform: rotate(-40deg) scale(1.5);
   }
 
   90% {
     content: url('assets/img/Archivo_001.jpeg');
+    transform: rotate(40deg) scale(1);
   }
 
   100% {
     content: url('assets/img/Archivo_002.jpeg');
+    transform: rotate(-40deg) scale(1.5);
   }
 
 }
-.div-column-anim{
-
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
 }
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.div-column-anim {}
