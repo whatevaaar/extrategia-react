@@ -3,7 +3,7 @@ const Numeralia = () => {
 
     return (
         <div className="div-numeralia">
-            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+            <Grid container>
                 <Grid item xs={2} sm={3} md={3}>
                     <p className="numeralia-num">190</p>
                     <p className="numeralia-text">portadas en medios</p>

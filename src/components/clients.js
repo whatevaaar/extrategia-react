@@ -11,6 +11,7 @@ import img7 from '../assets/img/Extrategia_Web_Portada_03.jpg'
 import img8 from '../assets/img/Extrategia_Web_Portada_04.jpg'
 import img9 from '../assets/img/Archivo_000.jpeg'
 import img10 from '../assets/img/Archivo_001.jpeg'
+import Numeralia from "./numeralia";
 const Clients = () => {
     const [imgIndex, setImgIndex] = useState(0);
     const controls = useAnimation();
@@ -37,29 +38,19 @@ const Clients = () => {
     return (
         <div className="div-clients">
             <h2 className="clientes-subtitle">clientes</h2>
-            <Grid container alignItems="center">
-                <Grid item xs={5} sm={5} md={5}>
-                    <p className="clientes-num">+50</p>
-                    <p className="clientes-text">clientes activos</p>
-                </Grid>
-                <Grid item xs={7} sm={7} md={7}>
-                    <Grid container alignItems="center">
-                        <Grid>
-                            <motion.img
-                                animate={controls}
-                                className="img-num-anim" src={sourcesList[imgIndex]} alt="img transitions" />
-
-                        </Grid>
-                        <Grid>
-                            <div className="div-column-anim">
-                                <p className="number-anim"></p>
-                                <p className="text-anim"></p>
-                            </div>
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </Grid>
-
+            <div className="row sub-clients">
+                <div className="div-column-bg-num">
+                    <motion.img
+                        animate={controls}
+                        className="img-num-anim" src={sourcesList[imgIndex]} alt="img transitions" />
+                </div>
+                <div className="div-column-anim">
+                    <div>
+                        <p className="number-anim"></p>
+                        <p className="text-anim"></p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }; export default Clients
