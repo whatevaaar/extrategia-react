@@ -1,5 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
+  max-width: 100%;
+}
+
+video {
+  object-fit: fill;
 }
 
 a {
@@ -151,7 +160,7 @@ footer {
 .header-influence {
   font-size: 5vw;
   margin: 0;
-  margin-top: 40vh;
+  margin-top: 30vh;
   font-weight: 10;
   text-align: center;
 }
@@ -165,7 +174,7 @@ footer {
 }
 
 .header-reputation {
-  font-size: 8vw;
+  font-size: 7.6vw;
   margin: 0;
   letter-spacing: .2rem;
   margin-top: 3vh;
@@ -302,7 +311,7 @@ footer {
   margin-right: auto;
   display: block;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
 }
 
 .center-video-2 {
@@ -339,7 +348,7 @@ footer {
 }
 
 .img-num-anim {
-  animation: animatedNumImg 10s ease-in-out infinite;
+  transition: opacity 6s ease-out;
   height: 10%;
   max-height: 30vh;
   min-height: 20vh;
@@ -408,72 +417,154 @@ footer {
 }
 
 @keyframes animatedNumImg {
-  0% {
-    content: url('assets/img/LH_2_0031.JPG');
-    transform: rotate(-40deg) scale(1);
+  from{
+    opacity: 0;
   }
-
-  10% {
-    content: url('assets/img/LH_2_0103.JPG');
-    transform: rotate(40deg) scale(1.5);
+  to{
+    opacity: 1;
   }
+}
 
-  20% {
-    content: url('assets/img/LH_2_0224.JPG');
-    transform: rotate(-40deg) scale(1);
-  }
+@-webkit-keyframes fadeinout {
 
-  30% {
-    content: url('assets/img/LH_2_0264.JPG');
-    transform: rotate(40deg) scale(1.5);
-
-  }
-
-  40% {
-    content: url('assets/img/Extrategia_Web_Portada_01.jpg');
-    transform: rotate(-40deg) scale(1.5);
+  0%,
+  100% {
+    opacity: 0;
   }
 
   50% {
-    content: url('assets/img/Extrategia_Web_Portada_02.jpg');
-    transform: rotate(40deg) scale(1);
+    opacity: 1;
   }
-
-  60% {
-    content: url('assets/img/Extrategia_Web_Portada_03.jpg');
-    transform: rotate(-40deg) scale(1.5);
-  }
-
-  70% {
-    content: url('assets/img/Extrategia_Web_Portada_04.jpg');
-    transform: rotate(40deg) scale(1);
-
-  }
-
-  80% {
-    content: url('assets/img/Archivo_000.jpeg');
-    transform: rotate(-40deg) scale(1.5);
-  }
-
-  90% {
-    content: url('assets/img/Archivo_001.jpeg');
-    transform: rotate(40deg) scale(1);
-  }
-
-  100% {
-    content: url('assets/img/Archivo_002.jpeg');
-    transform: rotate(-40deg) scale(1.5);
-  }
-
-}
-@-webkit-keyframes fadeinout {
-  0%,100% { opacity: 0; }
-  50% { opacity: 1; }
 }
 
 @keyframes fadeinout {
-  0%,100% { opacity: 0; }
-  50% { opacity: 1; }
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
-.div-column-anim {}
+.arrow-down-icon {
+  margin: auto;
+  padding-top: 10vh;
+  display: block;
+}
+
+.center-animation {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.center-animation-text-column {
+  width: 40vw;
+}
+
+.center-animation-text {
+  text-align: right;
+  font-size: 3vw;
+}
+
+.center-animation-text::before {
+  animation: animatedText 10s infinite;
+  content: "";
+}
+
+.center-animation-img-div {
+
+  height: 70vh;
+}
+
+.center-animation-img {
+  height: 70vh;
+  overflow-x: hidden;
+  margin-left: auto;
+  animation: center-img-anim 10s infinite;
+  display: block;
+}
+
+@keyframes center-img-anim {
+  0% {
+    transform: scale(.2) translateX(900px);
+    overflow-x: hidden;
+    opacity: 0;
+  }
+
+  20% {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animatedText {
+  0% {
+    content: "Con más de 25 años escribiendo historias";
+  }
+
+  9% {
+    content: "Extrategia convierte grandes ideas en realidades";
+  }
+
+  17% {
+    content: "No monitoreamos medios, planeamos con inteligencia mediática.";
+  }
+
+  25% {
+    content: "No llenamos espacios informativos, contamos historias valiosas que se publican.";
+  }
+
+  33% {
+    content: "No hacemos listas de contactos, sumamos valores para fortalecer alianzas.";
+  }
+
+  41% {
+    content: "No sustituimos plataformas, integramos la comunicación estratégica.";
+  }
+
+  49% {
+    content: "No hacemos community Management, somos Content Consultants.";
+  }
+
+  57% {
+    content: "No cabildeamos, construimos vinculación estratégica.";
+  }
+
+  65% {
+    content: "No ejecutamos herramientas repetitivas, proponemos una estrategia de soluciones.";
+  }
+
+  73% {
+    content: "No solo manejamos crisis, prevenimos crisis.";
+  }
+
+  81% {
+    content: "No sugerimos tips momentáneos, entrenamos Voceros.";
+  }
+
+  89% {
+    content: "No proponemos proyectos, concretamos servicios en productos.";
+  }
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center-animation-img-div {
+  width: 45%;
+  float: right;
+}
+
+.center-animation-text-div {
+  width: 55%;
+  float: left;
+}

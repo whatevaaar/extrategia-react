@@ -1,17 +1,14 @@
 import { motion, useViewportScroll, useTransform } from "framer-motion"
 import mainImg from "../assets/img/logo.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
     const { scrollYProgress } = useViewportScroll()
-    const  yPosAnimImg= useTransform(scrollYProgress, [0, 40,], [0, 750,])
     const xPosAnimSub = useTransform(scrollYProgress, [0, 1,], [0, 650,])
-
     return (
         <div className="header-div">
-            <motion.img
-                style={{
-                    y: yPosAnimImg,
-                }}
+            <img
                 alt="img" src={mainImg} className="header-img" />
             <motion.h2
                 animate={{ scale: 2 }}
@@ -34,7 +31,9 @@ const Header = () => {
                     x: xPosAnimSub
                 }}
                 className="header-reputation">reputation</motion.h2>
-                
+            <a href={"#center-content"}>
+                <FontAwesomeIcon className="arrow-down-icon" icon={faChevronDown} />
+            </a>
         </div>
     )
 }
